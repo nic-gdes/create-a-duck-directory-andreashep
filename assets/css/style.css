@@ -47,7 +47,7 @@ p {
     list-style: none;
   }
   
-  header, footer li {
+  /*header, footer li {
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -57,6 +57,7 @@ p {
     color: var(--black);
     font-family: "montserrat", sans-serif;
   }
+*/
   a {
     text-decoration: none;
     color: var(--black);
@@ -118,9 +119,10 @@ p {
   .duck-grid {
     display: grid;
     width: 90%;
+    height: auto;
     margin: 1rem auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 1rem;
     align-items: start;
     border: 1px solid var(--black);
@@ -131,7 +133,7 @@ p {
   .duck {
     display: flex;
     flex-direction: column;
-    
+    height: auto;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--black);
@@ -147,12 +149,13 @@ p {
     justify-content: center;
   }
   
-  .duck img {
+.duck img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20rem;
-    height: 10rem;
+    max-height: 10rem;
+    padding: 1rem;
+    
     border: #101010 1px solid;
   }
   .duck, .duck-profile-info ul, li {
@@ -164,6 +167,14 @@ p {
     padding: 0;
   }
   
+  .duck-grid, .duck li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
   
   /*-------------------FORM-------------------*/
   

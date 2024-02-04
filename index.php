@@ -16,18 +16,18 @@
 
         <section>
             <div class="duck-grid">
-                <div class="duck">
+                <div class="duck duck1">
                     <h3>Quack</h3>
-                    <img src="assets/images/duck1.jpg" alt="duck1">
+                    <img src="./assets/images/duck1.png" alt="duck1">
                     <ul class="favorite-foods">
                         <li>food</li>
                         <li>food</li>
                         <li>food</li>
                     </ul>
                 </div>
-                <div class="duck">
+                <div class="duck duck2">
                     <h3>Quack</h3>
-                    <img src="assets/images/duck1.jpg" alt="duck2">
+                    <img src="./assets/images//duck2.jpg" alt="duck2">
                     <ul class="favorite-foods">
                         <li>food</li>
                         <li>food</li>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="duck duck3">
                     <h3>Quack</h3>
-                    <img src="assets/images/duck1.jpg" alt="duck3">
+                    <img src="./assets/images/duck3.jpg" alt="duck3">
                     <ul class="favorite-foods">
                         <li>food</li>
                         <li>food</li>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="duck duck4">
                     <h3>Quack</h3>
-                    <img src="assets/images/duck1.jpg" alt="duck4">
+                    <img src="./assets/images/duck4.jpg" alt="duck4">
                     <ul class="favorite-foods">
                         <li>food</li>
                         <li>food</li>
@@ -54,7 +54,16 @@
                 </div>
                 <div class="duck duck5">
                     <h3>Quack</h3>
-                    <img src="assets/images/duck1.jpg" alt="duck5">
+                    <img src="./assets/images/duck5.png" alt="duck5">
+                    <ul class="favorite-foods">
+                        <li>food</li>
+                        <li>food</li>
+                        <li>food</li>
+                    </ul>
+                </div>
+                <div class="duck duck6">
+                    <h3>Quack</h3>
+                    <img src=./assets/images/duck6.jpg alt="duck6">
                     <ul class="favorite-foods">
                         <li>food</li>
                         <li>food</li>

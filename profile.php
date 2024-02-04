@@ -13,7 +13,7 @@
     <div class="duck-container">
         <h2>Name of Quacker</h2>
         <div class="duck-profile-image">
-            <img src="assets/images/duck1.jpg" alt="duck1">
+            <img src="assets/images/duck1.png" alt="duck1">
         </div>
         <div class="duck-profile-info">
             <h3>Favorite foods</h3>
