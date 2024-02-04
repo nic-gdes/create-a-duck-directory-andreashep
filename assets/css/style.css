@@ -111,7 +111,7 @@ p {
   /*---------profile- duck container---------*/
   .duck-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     margin: 0 auto;
     justify-content: center;
@@ -130,7 +130,7 @@ p {
   /*-------------------GRID CONTAINER-------------------*/
   .duck-grid {
     display: grid;
-    width: 90%;
+    width: 95%;
     height: auto;
     margin: 1rem auto;
     grid-template-columns: repeat(2) 1fr;
@@ -145,7 +145,7 @@ p {
   .duck {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 35%;
     height: auto;
     justify-content: center;
     align-items: center;
