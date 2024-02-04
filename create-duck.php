@@ -14,6 +14,9 @@ if (isset($_POST['submit'])) {
 <!-----------include head----------->
 <?php include 'components/head.php'; ?>
 
+ <!----page title------->
+ <?php $page_title = "Create A Duck";
+?>
 
 <body>
     <!-----------include nav----------->

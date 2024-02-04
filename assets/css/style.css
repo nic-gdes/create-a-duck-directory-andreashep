@@ -36,34 +36,34 @@ p {
   }
   
   /*-------------------NAV-------------------*/
-  header, footer nav, ul {
+  nav, ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:center;
   
-    width: 100%;
+    width: 50%;
     margin: 0;
     padding: 1rem 3rem;
     list-style: none;
   }
   
-  /*header, footer li {
+  li {
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
     margin: 0 1rem;
     padding: 0 1rem;
     font-size: 1.5rem;
     color: var(--black);
     font-family: "montserrat", sans-serif;
   }
-*/
   a {
     text-decoration: none;
     color: var(--black);
     margin: 0 1rem;
     padding: 0 1rem;
   }
+  
   
   /*-------------------MAIN-------------------*/
   main {
@@ -87,6 +87,18 @@ p {
     font-weight: medium;
   }
 
+  h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 350;
+    width: 100%;
+    margin: 2rem 1.5rem;
+    color: var(--black);
+    font-family: "dancing script", cursive;
+    font-weight: medium;
+  }
+  
   label {
     display: flex;
     flex-direction: column;
@@ -121,7 +133,7 @@ p {
     width: 90%;
     height: auto;
     margin: 1rem auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2) 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1rem;
     align-items: start;
@@ -133,6 +145,7 @@ p {
   .duck {
     display: flex;
     flex-direction: column;
+    width: 30%;
     height: auto;
     justify-content: center;
     align-items: center;

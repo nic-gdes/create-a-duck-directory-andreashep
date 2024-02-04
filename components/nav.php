@@ -1,5 +1,7 @@
 <header>
     
+ <!-------image------->
+ <img src="../assets/images/duck7.jpg" alt="duck!">
     <!-------nav------->
     <nav>
         <ul>

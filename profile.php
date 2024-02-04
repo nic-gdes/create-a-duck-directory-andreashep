@@ -4,11 +4,16 @@
 <!-----------include head----------->
 <?php include 'components/head.php'; ?>
 
+ <!----page title------->
+ <?php $page_title = "Duck Profile";
+?>
 
 <body>
     <!-----------include nav----------->
 <?php include 'components/nav.php'; ?>
 
+
+<!-----------main content----------->
 <main>
     <div class="duck-container">
         <h2>Name of Quacker</h2>

@@ -4,15 +4,20 @@
 <!-----------include head----------->
 <?php include 'components/head.php'; ?>
 
+ <!----page title------->
+ <?php $page_title = "Home";
+?>
 
 <body>
     <!-----------include nav----------->
     <?php include 'components/nav.php'; ?>
 
+
+    <!-----------main content----------->
     <main>
         <h1>Welcome</h1>
-        <h3>This is our welcome message. Ducks rock!
-        </h3>
+        <h2>This is our welcome message. Ducks rock!
+        </h2>
 
         <section>
             <div class="duck-grid">
