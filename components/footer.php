@@ -15,8 +15,8 @@
             <li><a href="../contact.php">Create a Duck</li></a>
         </ul>
     </nav>
-   
+
 <!---------SCRIPT---------->
-    <script src="../assets/source.js"></script>
+
     
 </footer>

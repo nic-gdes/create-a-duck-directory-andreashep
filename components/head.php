@@ -6,7 +6,7 @@
     <title><?php echo $page_title; ?></title>
 
     <!---------link css------>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css?v=<?php echo time(); ?>">
 
      <!---------link font from google------>
      <link rel="preconnect" href="https://fonts.googleapis.com">

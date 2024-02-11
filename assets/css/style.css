@@ -1,14 +1,15 @@
 :root {
     font-family: "Dancing Script", cursive;
+    font-family: "montserrat", sans-serif;
     font-size: 16px;
     color: var(--black #101010);
   }
   
     /*-------------------BODY-------------------*/
 body {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
 }
 
 p {
@@ -41,19 +42,19 @@ p {
     flex-direction: row;
     justify-content:center;
   
-    width: 50%;
+    width: 75%;
     margin: 0;
     padding: 1rem 3rem;
     list-style: none;
   }
   
-  li {
+  nav li {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 0 1rem;
     padding: 0 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--black);
     font-family: "montserrat", sans-serif;
   }
@@ -62,6 +63,7 @@ p {
     color: var(--black);
     margin: 0 1rem;
     padding: 0 1rem;
+    font-size: 1.5rem;
   }
   
   
@@ -71,6 +73,7 @@ p {
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
+    padding: 2rem;
     justify-content: center;
     align-items: center;
   }
@@ -111,29 +114,53 @@ p {
   /*---------profile- duck container---------*/
   .duck-container {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .duck-profile-info {
-    display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
   }
+
+  .profile {
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .profile-image {
+    display: flex;
+    width: 40%;
+  }
   
+  .duck-foods {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .duck-bio {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
   /*-------------------GRID CONTAINER-------------------*/
   .duck-grid {
     display: grid;
-    width: 95%;
+   width: 90%;
+   max-width: 1100px;
     height: auto;
-    margin: 1rem auto;
-    grid-template-columns: repeat(2) 1fr;
+    margin: 0 auto;
+    grid-template-columns: 1.25fr 1.25fr;
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1rem;
     align-items: start;
@@ -142,10 +169,10 @@ p {
   }
   
   /*-------------------GRID ITEM-------------------*/
-  .duck {
+ .grid-item {
     display: flex;
     flex-direction: column;
-    width: 35%;
+   
     height: auto;
     justify-content: center;
     align-items: center;
@@ -154,7 +181,7 @@ p {
     padding: 1rem;
   }
   
-  .duck h3 {
+  .grid-item h3 {
     display: flex;
     font-size: 2rem;
     font-weight: 350;
@@ -162,32 +189,32 @@ p {
     justify-content: center;
   }
   
-.duck img {
+.grid-item img {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 10rem;
+    max-height: 20rem;
     padding: 1rem;
-    
     border: #101010 1px solid;
   }
-  .duck, .duck-profile-info ul, li {
+.duck-profile-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     list-style: none;
     padding: 0;
+  }
+  .favorite-foods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 1rem;
   }
   
-  .duck-grid, .duck li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-  }
+ 
   
   /*-------------------FORM-------------------*/
   
@@ -221,6 +248,15 @@ p {
   align-items: center; 
   }
   
+
+  .error {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    font-weight: 350;
+    margin: .5rem 0;
+    color: red;
+  }
   /*-------------------FOOTER-------------------*/
 footer {
     display: flex;
