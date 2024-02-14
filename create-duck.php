@@ -1,18 +1,15 @@
 <?php
+
 //check for POST request
 if (isset($_POST['submit'])) {
+
     //create error array
-    $errors = array(
-        "name" => '',
-        "favorite_foods" => '',
-        "bio" => ''
-    );
+   
+    $errors = ["name" => '', "favorite_foods" => '', "bio" => ''];
 
-    $name = htmlspecialchars($_POST["name"]);
-    $favorite_foods =  htmlspecialchars($_POST["favorite_foods"]);
-    $bio = htmlspecialchars($_POST["bio"]);
-
-
+    $name = htmlspecialchars($_POST['name']);
+    $favorite_foods =  htmlspecialchars($_POST['favorite_foods']);
+    $bio = htmlspecialchars($_POST['bio']);
 
 
     //check if the name exists
@@ -49,19 +46,33 @@ if (isset($_POST['submit'])) {
     }
 
     if (!array_filter($errors)) {
-        //if there are any errors
-    } else {
-        //if there are no errors - form is valid
-        // header('Location:index.php');
-        //echo 'Form is valid';
-        //redirect to index.php       
+        //everything is goood - form is valid
+echo 'submitted';
+?>
+/*---------------------*/        //connect to database
+   <?php
+        require("./config/db.php");
 
+        //build sql query
+        $sql = "INSERT INTO ducks(name, favorite_foods, bio) VALUES('$name', '$favorite_foods', '$bio')";
+        //execute query in mysql
+     mysqli_query($conn, $sql);
+
+        //load homepage
+        header('Location:index.php');
+       
+        
+    } else {
+        //if there are any errors        
+        echo "errors in the form: ";
     }
 
-    print_r($errors);
+   
 }
 
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
