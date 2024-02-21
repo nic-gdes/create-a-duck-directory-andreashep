@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
         //everything is goood - form is valid
 echo 'submitted';
 ?>
-/*---------------------*/        //connect to database
+      //connect to database
    <?php
         require("./config/db.php");
 
